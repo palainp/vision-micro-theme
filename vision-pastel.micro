@@ -1,0 +1,51 @@
+# vision-pastel: softer, pastel variant of vision-blue for micro
+#
+# Same roles as vision-blue (yellow text, white reserved words, grey comments
+# on a blue background), with muted colours. Not taken from any original
+# palette. Every syntax colour keeps a contrast ratio of at least 4.5:1
+# against the background (WCAG AA).
+
+# --- Syntax ---
+color-link default "#E6DAA0,#3C4353"
+color-link identifier "#E6DAA0,#3C4353"
+color-link type "#E6DAA0,#3C4353"
+color-link symbol "#E6DAA0,#3C4353"
+color-link constant "#E6DAA0,#3C4353"
+color-link statement "#E4E4DC,#3C4353"
+color-link comment "#A9B1C9,#3C4353"
+color-link constant.string "#A6DEDE,#3C4353"
+color-link constant.specialChar "#A6DEDE,#3C4353"
+color-link constant.number "#86C2C2,#3C4353"
+color-link preproc "#EFA7A7,#3C4353"
+color-link special "#B3DDA6,#3C4353"
+color-link error "#F5EBC0,#9E4E4E"
+color-link todo "#E4E4DC,#3C4353"
+color-link underlined "underline #E6DAA0,#3C4353"
+
+# --- Editor area ---
+color-link selection "#1F232C,#A3A9B5"
+color-link cursor-line "#3C4353"
+color-link indent-char "#5E6678,#3C4353"
+color-link hlsearch "#1F232C,#8CC4C4"
+color-link match-brace "#E4E4DC,#4F8C8C"
+color-link tab-error "#F5EBC0,#9E4E4E"
+color-link trailingws "#F5EBC0,#9E4E4E"
+color-link gutter-error "#F5EBC0,#9E4E4E"
+color-link line-number "#A9B1C9,#3C4353"
+color-link current-line-number "#E4E4DC,#3C4353"
+color-link color-column "#353B49"
+color-link gutter-warning "#1F232C,#D1AE7E"
+color-link diff-added "#B3DDA6,#3C4353"
+color-link diff-modified "#E6DAA0,#3C4353"
+color-link diff-deleted "#EFA7A7,#3C4353"
+
+# --- Chrome ---
+color-link statusline "#1F232C,#A3A9B5"
+color-link tabbar "#1F232C,#A3A9B5"
+color-link message "#1F232C,#A3A9B5"
+color-link statusline.inactive "#4E5462,#A3A9B5"
+color-link statusline.suggestions "#1F232C,#97C497"
+color-link tabbar.active "#1F232C,#97C497"
+color-link divider "#E4E4DC,#3C4353"
+color-link scrollbar "#3C4353,#86C2C2"
+color-link error-message "#F5EBC0,#9E4E4E"

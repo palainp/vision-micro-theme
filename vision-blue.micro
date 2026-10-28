@@ -1,0 +1,79 @@
+# vision-blue: blue text-mode colorscheme for micro
+#
+# Sources (attribute bytes are background nibble + foreground nibble, CGA palette):
+# - Editor: Free Pascal IDE, packages/ide/fpconst.pas (CSourceWindow 33-48)
+#   mapped through packages/ide/weditor.pas (CEditor, ColorTab).
+# - Menu bar, status line, window frame: Borland Turbo Vision 2.0 cpAppColor
+#   (entries 2-7 menu/status line, 8-15 blue window), as kept in magiblot/tvision.
+# Groups with no equivalent in the IDE are marked "no TP equivalent".
+#
+# CGA palette: 0 #000000  1 #0000AA  2 #00AA00  3 #00AAAA  4 #AA0000  5 #AA00AA
+# 6 #AA5500  7 #AAAAAA  8 #555555  9 #5555FF  A #55FF55  B #55FFFF  C #FF5555
+# D #FF55FF  E #FFFF55  F #FFFFFF
+
+# --- Syntax ---
+color-link default "#FFFF55,#0000AA"
+# $1E text, identifier, symbol
+color-link identifier "#FFFF55,#0000AA"
+color-link type "#FFFF55,#0000AA"
+color-link symbol "#FFFF55,#0000AA"
+color-link constant "#FFFF55,#0000AA"
+# $1F reserved word
+color-link statement "#FFFFFF,#0000AA"
+# $17 comment
+color-link comment "#AAAAAA,#0000AA"
+# $1B string
+color-link constant.string "#55FFFF,#0000AA"
+color-link constant.specialChar "#55FFFF,#0000AA"
+# $13 number and hex number
+color-link constant.number "#00AAAA,#0000AA"
+# $1C directive
+color-link preproc "#FF5555,#0000AA"
+# $1A assembler
+color-link special "#55FF55,#0000AA"
+# $4E error / breakpoint
+color-link error "#FFFF55,#AA0000"
+# no TP equivalent
+color-link todo "#FFFFFF,#0000AA"
+color-link underlined "underline #FFFF55,#0000AA"
+
+# --- Editor area ---
+# $71 selected block
+color-link selection "#0000AA,#AAAAAA"
+# no current-line highlight in the IDE: same as background
+color-link cursor-line "#0000AA"
+# $19 whitespace / tab
+color-link indent-char "#5555FF,#0000AA"
+# $30 highlighted row
+color-link hlsearch "#000000,#00AAAA"
+# $3F highlighted column
+color-link match-brace "#FFFFFF,#00AAAA"
+# $4E error
+color-link tab-error "#FFFF55,#AA0000"
+color-link trailingws "#FFFF55,#AA0000"
+color-link gutter-error "#FFFF55,#AA0000"
+# no TP equivalent (the IDE had no line numbers, gutter or diff)
+color-link line-number "#AAAAAA,#0000AA"
+color-link current-line-number "#FFFFFF,#0000AA"
+color-link color-column "#000080"
+color-link gutter-warning "#000000,#AA5500"
+color-link diff-added "#55FF55,#0000AA"
+color-link diff-modified "#FFFF55,#0000AA"
+color-link diff-deleted "#FF5555,#0000AA"
+
+# --- Chrome ---
+# $70 menu / status line normal text
+color-link statusline "#000000,#AAAAAA"
+color-link tabbar "#000000,#AAAAAA"
+color-link message "#000000,#AAAAAA"
+# $78 menu / status line disabled text
+color-link statusline.inactive "#555555,#AAAAAA"
+# $20 menu / status line selection
+color-link statusline.suggestions "#000000,#00AA00"
+color-link tabbar.active "#000000,#00AA00"
+# $1F active window frame
+color-link divider "#FFFFFF,#0000AA"
+# $31 scroll bar
+color-link scrollbar "#0000AA,#00AAAA"
+# $4E error
+color-link error-message "#FFFF55,#AA0000"
